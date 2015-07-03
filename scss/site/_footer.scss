@@ -1,6 +1,71 @@
 // Add some whitespace above the footer for medium-up screens
-@media #{$medium-up} {
+
+@media #{$small-only} {
+	.alignright {
+		float: none;
+	}
+	.header, .footer-strip, .certs, .gallery-block, .school-links, .footer-strip {
+		display: none;
+	}
 	footer.row {
+		margin-right:0;
+		margin-left:0;
 		margin-top: rem-calc(60);
+	}
+	.row {
+		max-width: 100%;
+	}
+	.link-dropdown {
+		display: block;
+	}
+	.main article {
+		padding-left: 0;
+		border-left: 0;
+	}
+	.tab-bar {
+		margin-bottom: 0;
+		background: $blue;
+		h1.title {
+			font-size: rem-calc(18);
+			text-transform: uppercase;
+		}
+	}
+	.header {
+		height: 150px;
+		.logo {
+			display: none;
+		}
+		.logo-title {
+			margin-top:rem-calc(40);
+		}
+	}
+	.strip {
+		h4 {
+			font-size: rem-calc(14);
+		}
+	}
+
+	.home-links {
+		padding: 0 !important;
+		ul {
+			li {
+				a {
+					width:100%;
+					h5 {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media #{$medium-up} {
+	h1 {
+		font-size: rem-calc(20);
+		margin-bottom: rem-calc(10);
+	}
+	p {
+		font-size: rem-calc(16);
+		line-height: 1.5;
 	}
 }

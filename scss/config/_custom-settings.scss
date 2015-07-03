@@ -1,12 +1,14 @@
-/* 
+/*
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
 
 // We use these to define default font stacks
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif: "Times New Roman", Times, Georgia, Cambria, serif;
+$font-family-georgia: Georgia, Cambria, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-family-english111: 'english111_vivace_btregular', cursive;
 
 // We use these to define default font weights
 $font-weight-normal: normal !default;
@@ -32,19 +34,24 @@ $tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
+$blue	       : #0059aa;
+$navblue		 : #004081;
 
 // We use these as default colors throughout
-$primary-color: #008CBA;
+$primary-color: #000000;
 $secondary-color: #e7e7e7;
 $alert-color: #f04124;
 $success-color: #43AC6A;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
 
+// Columns
+$column-gutter: rem-calc(30);
+
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: $jet;
-$body-font-family: $font-family-sans-serif;
+$body-font-color: $black;
+$body-font-family: $font-family-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 $header-font-weight: 300;
@@ -57,3 +64,30 @@ $medium-breakpoint: em-calc(1024);
 $topbar-breakpoint: em-calc(820);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
+
+// Type
+$header-font-color: $blue;
+$paragraph-font-size: rem-calc(16);
+$h1-font-size: rem-calc(26);
+$h2-font-size: rem-calc(21);
+$h3-font-size: rem-calc(19);
+$h4-font-size: rem-calc(17);
+$h5-font-size: rem-calc(12);
+
+// Nav
+$topbar-bg-color: $white;
+$topbar-bg: $topbar-bg-color;
+$topbar-link-color: $black;
+$topbar-link-color-hover: $white;
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $navblue;
+$topbar-link-bg-active: $white;
+$topbar-link-bg-color-hover: $white;
+$topbar-dropdown-bg: $navblue;
+
+// Block grid settings
+$block-grid-default-spacing: rem-calc(15);
+$align-block-grid-to-grid: true;
+
+// Buttons
+$button-bg-color: $navblue;
