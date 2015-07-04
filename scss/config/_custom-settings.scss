@@ -31,7 +31,7 @@ $monsoon     : #777777;
 $steel       : #666666;
 $charcoal    : #555555;
 $tuatara     : #444444;
-$oil         : #333333;
+$oil         : #004081;
 $jet         : #222222;
 $black       : #000000;
 $blue	       : #0059aa;
@@ -60,8 +60,8 @@ $topbar-link-weight: bold;
 
 // Media query breakpoints
 $small-breakpoint:  em-calc(640);
-$medium-breakpoint: em-calc(1024);
-$topbar-breakpoint: em-calc(820);
+$medium-breakpoint: em-calc(1025);
+$topbar-breakpoint: em-calc(1025);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
 
@@ -77,6 +77,7 @@ $h5-font-size: rem-calc(12);
 // Nav
 $topbar-bg-color: $white;
 $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $blue;
 $topbar-link-color: $black;
 $topbar-link-color-hover: $white;
 $topbar-link-bg: $topbar-bg;

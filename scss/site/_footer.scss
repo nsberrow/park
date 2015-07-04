@@ -1,4 +1,3 @@
-// Add some whitespace above the footer for medium-up screens
 
 @media #{$small-only} {
 	.alignright {
@@ -30,6 +29,7 @@
 			text-transform: uppercase;
 		}
 	}
+
 	.header {
 		height: 150px;
 		.logo {
@@ -60,6 +60,11 @@
 	}
 }
 @media #{$medium-up} {
+	.inner-wrap {
+	  .top-bar {
+	    background: $blue;
+	  }
+	}
 	h1 {
 		font-size: rem-calc(20);
 		margin-bottom: rem-calc(10);

@@ -107,6 +107,7 @@
     }
   }
 }
+
 .top-bar-section {
   > ul {
     > .divider {
@@ -132,6 +133,9 @@
 }
 h1 {
   font-weight: $font-weight-bold;
+  .title {
+    text-transform: uppercase;;
+  }
 }
 .link-dropdown {
   display: none;
