@@ -1,4 +1,18 @@
-
+@media #{$medium-up} {
+	.inner-wrap {
+	  .top-bar {
+	    background: $white; 
+	  }
+	}
+	h1 {
+		font-size: rem-calc(20);
+		margin-bottom: rem-calc(10);
+	}
+	p {
+		font-size: rem-calc(16);
+		line-height: 1.5;
+	}
+}
 @media #{$small-only} {
 	.alignright {
 		float: none;
@@ -57,20 +71,5 @@
 				}
 			}
 		}
-	}
-}
-@media #{$medium-up} {
-	.inner-wrap {
-	  .top-bar {
-	    background: $blue;
-	  }
-	}
-	h1 {
-		font-size: rem-calc(20);
-		margin-bottom: rem-calc(10);
-	}
-	p {
-		font-size: rem-calc(16);
-		line-height: 1.5;
 	}
 }
