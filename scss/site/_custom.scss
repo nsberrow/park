@@ -133,9 +133,6 @@
 }
 h1 {
   font-weight: $font-weight-bold;
-  .title {
-    text-transform: uppercase;;
-  }
 }
 .link-dropdown {
   display: none;
@@ -269,5 +266,12 @@ blockquote {
         }
       }
     }
+  }
+}
+.no-bullet {
+  list-style-type: none;
+  padding-left:0;
+  li {
+    padding-left: 0;
   }
 }
