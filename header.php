@@ -69,11 +69,11 @@
 	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
 	<?php get_template_part( 'parts/home-header' ); ?>
 	<?php get_template_part( 'parts/top-bar' ); ?>
-
-
-<section class="container row" role="document">
-	<?php if (is_home() == true) {
-					} else {
-						get_template_part( 'parts/section-links' );
-					} ?>
+	<?php if (is_home() || is_front_page()) { ?>
+		<section class="container row" role="document">
+	<?php  get_template_part( 'parts/section-links' );
+	} else {
+		get_template_part( 'parts/section-links' ); ?>
+		<section class="container row" role="document">
+	<?php } ?>
 	<?php do_action( 'foundationpress_after_header' ); ?>

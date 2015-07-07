@@ -49,7 +49,39 @@
   }
 }
   .social-box {
+    background: #005392;
+    position: absolute;
+    right:rem-calc(26);
+    bottom:rem-calc(23);
+    ul {
+      padding:rem-calc(8) rem-calc(4) rem-calc(4) rem-calc(14);
+      margin:0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin-right:rem-calc(8);
+        a {
 
+          display: block;
+          background: url("../assets/img/icons/social-icons.png") no-repeat;
+          &.facebook {
+            width:rem-calc(24);
+            height:rem-calc(27);
+            background: url("../assets/img/icons/social-icons.png") no-repeat 0 2px;
+          }
+          &.twitter {
+            width:rem-calc(28);
+            height:rem-calc(27);
+            background: url("../assets/img/icons/social-icons.png") no-repeat  -29px 2px;
+          }
+          &.youtube {
+            width:rem-calc(36);
+            height:rem-calc(27);
+            background: url("../assets/img/icons/social-icons.png") no-repeat -62px 2px;
+          }
+        }
+      }
+    }
   }
 }
 .menu {
@@ -66,6 +98,7 @@
     }
     a {
       line-height: 45px;
+      padding:rem-calc(10);
       display: block;
       width: 100%;
     }
@@ -153,6 +186,9 @@ section.container {
   padding-top:rem-calc(20px);
 }
 .main {
+  @include block-grid(
+    $spacing:rem-calc(30)
+  );
   article {
     border-left:1px solid #ddddde;
     padding-left:rem-calc(25px);
@@ -170,24 +206,26 @@ section.container {
     display: inline-block;
     list-style-type: none;
     padding: 10px 0px 2px 0;
-    margin: 0 38px;
+    margin: 0 77px;
     li {
       float:left;
       margin-right: 10px;
       border-right:1px solid #90b4d0;
       h5 {
-        font-size: 13px;
+        font-size: 12px;
         color:$white;
         font-weight: bold;
         text-transform: uppercase;
         margin: 0px;
-        padding: 0px 12px 0 0;
+        padding: 0px 22px 0 4px;
         span {
-          font-size: 12px;
+          text-transform: lowercase;
+          font-size: 11px;
         }
       }
       &:last-child {
         border-right: 0;
+        margin-right:0;
       }
     }
   }
@@ -200,10 +238,15 @@ footer.row {
     -webkit-box-shadow:inset 0 0 30px 10px #002860;
     box-shadow:inset 0 0 30px 10px #002860;
     padding:24px 54px;
+    ul {
+      li {
+        padding-bottom: 20px;
+      }
+    }
     h5 {
       color: white;
       text-align: center;
-      font-size: rem-calc(13px);
+      font-size: rem-calc(12px);
     }
   }
 }
@@ -217,6 +260,7 @@ blockquote {
   }
 }
 .school-links {
+  overflow:hidden;
   .home-links {
     margin-top: 5px;
     margin-right: 1%;
@@ -226,8 +270,7 @@ blockquote {
     li {
       padding-bottom:20px;
       a {
-        display: block;
-        width: 96%;
+
         h5 {
           color:$white;
           text-align: center;
@@ -244,8 +287,8 @@ blockquote {
             background:#40ae49;
           }
           &.yellow {
-            background:#fdd51a;
-            text-shadow: 0px 0px 6px #514d14;
+            background:#fff200;
+            text-shadow: 0px 0px 11px #262408;
           }
           &.red {
             background:#d2232a;
@@ -272,7 +315,19 @@ blockquote {
   list-style-type: none;
   padding-left:0;
   margin-left:0;
-  li { 
+  li {
     padding-left: 0;
+  }
+}
+#gallery-6 {
+  img {
+    border:0;
+    margin-right:8;
+    -moz-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+    &:last-child {
+      margin-right:0;
+    }
   }
 }

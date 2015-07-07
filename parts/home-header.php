@@ -17,6 +17,7 @@
       <span class="tagline">“Reaching Outwards, Growing Minds, Building Futures”</span>
     </div>
   	<div class="social-box">
+      <?php get_template_part( 'parts/social-box' ); ?>
     </div>
   </div>
   <div class="strip">
