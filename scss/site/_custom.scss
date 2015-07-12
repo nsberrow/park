@@ -206,6 +206,10 @@ section.container {
   margin-top: 35px;
   height: 30px;
 }
+.no-shadow {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 .footer-strip {
   background: #005392;
   ul {
