@@ -9,7 +9,7 @@
 
 ?>
 <ul>
-  <li><a href="#" class="facebook"></a></li>
-  <li><a href="#" class="twitter"></a></li>
-  <li><a href="#" class="youtube"></a></li>
+  <li><a href="https://www.facebook.com/pages/Parklands-College-Christopher-Robin-Pre-Primary/121676614579736?fref=ts" class="facebook"></a></li>
+  <li><a href="https://twitter.com/parklandstweet" class="twitter"></a></li>
+  <li><a href="https://www.youtube.com/user/ParklandsCollege" class="youtube"></a></li>
 </ul>
