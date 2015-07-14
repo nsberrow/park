@@ -338,7 +338,7 @@ blockquote {
 #gallery-6 {
   .gallery-item {
     margin-left:rem-calc(9);
-    width:32%;
+    width:32% !important;
     &:first-child {
       margin-left:0;
     }
