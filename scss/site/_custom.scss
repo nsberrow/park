@@ -182,6 +182,11 @@ h1 {
     padding: rem-calc(5);
   }
 }
+header {
+  h1.entry-title {
+    margin-bottom: rem-calc(30);
+  }
+}
 section.container {
   padding:rem-calc(35px) rem-calc(30px) rem-calc(25px) rem-calc(30px) ;
   background:$white;

@@ -1,7 +1,7 @@
 <div class="row school-links">
 	<ul class="medium-block-grid-4 small-block-grid-1 <?php if (is_front_page() == true) { echo "home-links"; } else { } ?>">
 		<li>
-			<a href="<?=site_url();?>/our-faculties/pre-primary-and-nursery/">
+			<a href="<?=site_url();?>/welcome-to-christopher-robin-pre-primary/">
 				<?php if (is_front_page() == true) { ?>
 					<img src="<?=get_template_directory_uri();?>/assets/img/home-preprimary.jpg" />
 				<?php } else { } ?>
@@ -9,7 +9,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="<?=site_url();?>/our-faculties/junior-preparatory/">
+			<a href="<?=site_url();?>/welcome-to-the-junior-preparatory/">
 				<?php if (is_front_page() == true) { ?>
 					<img src="<?=get_template_directory_uri();?>/assets/img/home-juniorprep.jpg" />
 				<?php } else { } ?>
@@ -17,7 +17,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="<?=site_url();?>/our-faculties/senior-preparatory/">
+			<a href="<?=site_url();?>/welcome-to-the-senior-preparatory/">
 				<?php if (is_front_page() == true) { ?>
 					<img src="<?=get_template_directory_uri();?>/assets/img/home-seniorprep.jpg" />
 				<?php } else { } ?>
@@ -25,7 +25,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="<?=site_url();?>/our-faculties/secondary/">
+			<a href="<?=site_url();?>/welcome-to-the-secondary-faculty/">
 				<?php if (is_front_page() == true) { ?>
 					<img src="<?=get_template_directory_uri();?>/assets/img/home-highschool.jpg" />
 				<?php } else { } ?>
