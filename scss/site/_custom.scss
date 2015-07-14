@@ -354,3 +354,16 @@ blockquote {
     }
   }
 }
+.gallery-size-thumbnail {
+  .gallery-item {
+    .gallery-icon {
+      img {
+        border:1px solid white !important;
+        width:92%;
+        -moz-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+      }
+    }
+  }
+}
