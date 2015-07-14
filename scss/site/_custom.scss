@@ -12,7 +12,7 @@
 }
 
 .header {
-  background: #003578 url("../assets/img/header-bg.png") no-repeat center top;
+  background: #003578 url("../assets/img/bg.png") no-repeat center -292px;
   -webkit-box-shadow:inset 0 0 30px 10px #002860;
   box-shadow:inset 0 0 30px 10px #002860;
   position: relative;
@@ -86,7 +86,7 @@
   }
 }
 .menu {
-  margin:20px 0 0 0;
+  margin:0;
   text-align: center;
   li {
     list-style-type: none;
@@ -167,6 +167,8 @@
 }
 h1 {
   font-weight: $font-weight-bold;
+  margin-top:0;
+  line-height: 12px;
 }
 .link-dropdown {
   display: none;
@@ -180,11 +182,13 @@ h1 {
   }
 }
 section.container {
-  padding:rem-calc(25px) rem-calc(30px);
+  padding:rem-calc(35px) rem-calc(30px) rem-calc(25px) rem-calc(30px) ;
   background:$white;
   -webkit-box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
   box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
-  padding-top:rem-calc(20px);
+}
+#sidebar {
+  margin-top:rem-calc(-16);
 }
 .main {
   @include block-grid(
@@ -197,7 +201,7 @@ section.container {
 }
 .entry-content {
   img {
-    box-shadow: 0px 0px 11px #262408;
+    box-shadow: 0px 0px 11px rgba(0,0,0,0.6);
   }
 }
 .certs {
@@ -298,7 +302,7 @@ blockquote {
           }
           &.yellow {
             background:#fff200;
-            text-shadow: 0px 0px 11px #262408;
+            text-shadow: 0px 1px 5px #000;
           }
           &.red {
             background:#d2232a;
