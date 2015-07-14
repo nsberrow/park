@@ -335,7 +335,8 @@ blockquote {
     padding-left: 0;
   }
 }
-#gallery-6 {
+
+#gallery-size-medium {
   .gallery-item {
     margin-left:rem-calc(9);
     width:32% !important;
@@ -344,7 +345,7 @@ blockquote {
     }
   }
   img {
-    border:2px solid white !important;
+    border:1px solid white !important;
     -moz-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
     box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
