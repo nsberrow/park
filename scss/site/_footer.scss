@@ -1,7 +1,13 @@
 @media #{$medium-up} {
+	#sidebar {
+		width: 100%;
+	}
+	.main article {
+		width: 100%;
+	}
 	.inner-wrap {
 	  .top-bar {
-	    background: $white; 
+	    background: $white;
 	  }
 	}
 	h1 {
@@ -14,6 +20,7 @@
 	}
 }
 @media #{$small-only} {
+
 	.alignright {
 		float: none;
 	}
