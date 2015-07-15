@@ -85,7 +85,7 @@
   }
 }
 .menu {
-  margin:0;
+  margin-top:-24px;
   text-align: center;
   li {
     list-style-type: none;
@@ -196,7 +196,7 @@ section.container {
 #sidebar {
   margin-top:rem-calc(-16);
   border-right:1px solid #ddddde;
-  margin-right:-1px;
+  margin-right:10px;
 }
 
 .main {
