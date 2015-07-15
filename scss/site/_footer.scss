@@ -2,6 +2,11 @@
 	#sidebar {
 		width: 100%;
 		left:0;
+		border-right:0;
+	}
+	.main {
+		left:0;
+		border-left:0;
 	}
 	.main article {
 		width: 100%;
