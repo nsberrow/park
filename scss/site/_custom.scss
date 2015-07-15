@@ -189,6 +189,7 @@ header {
 section.container {
   padding:rem-calc(35px) rem-calc(30px) rem-calc(25px) rem-calc(30px) ;
   background:$white;
+  position: relative;
   -webkit-box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
   box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
 }
@@ -206,6 +207,7 @@ section.container {
   );
   article {
     padding-left:rem-calc(25px);
+    padding-right:rem-calc(25px);
   }
 }
 .entry-content {
