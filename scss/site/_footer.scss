@@ -1,4 +1,4 @@
-@media #{$medium-up} {
+@media (min-width:1020px) {
 	#sidebar {
 		width: 100%;
 		left:0;
@@ -6,6 +6,10 @@
 	.main article {
 		width: 100%;
 	}
+}
+
+@media #{$medium-up} {
+
 	.inner-wrap {
 	  .top-bar {
 	    background: $white;
