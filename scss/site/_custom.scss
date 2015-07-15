@@ -197,7 +197,9 @@ section.container {
   margin-top:rem-calc(-16);
   border-right:1px solid #ddddde;
   margin-right:10px;
-  position: relative;;
+  position: relative;
+  top: 26px;
+  z-index: 10;
   ul.menu {
     margin-left: 0;
   }
