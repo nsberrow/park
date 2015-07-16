@@ -20,7 +20,7 @@ get_header(); ?>
           <p>
         <?php if ( has_post_thumbnail() ) { ?>
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail( 'thumbnail' ); ?>
+                <?php the_post_thumbnail( 'medium' ); ?>
             </a>
         <?php } ?>
         <?php $content = get_the_content();
