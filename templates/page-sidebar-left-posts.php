@@ -7,21 +7,25 @@ get_header(); ?>
   <div class="small-12 medium-12 large-9 large-push-3 columns" role="main">
 
     <ul>
-      // Define our WP Query Parameters 
-      <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
 
-      // Start our WP Query
+      <?php $the_query = new WP_Query( 'posts_per_page=15' ); ?>
+
       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-        // Display the Post Title with Hyperlink
-        <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
-
-        // Display the Post Excerpt
-        <li><?php the_excerpt(__('(more…)')); ?></li>
-
-        // Repeat the process and reset once it hits the limit
-        <?php
-      endwhile;
+        <h1 class="entry-title">
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </h1>
+        <article id="post-<?php the_ID(); ?>" <?php post_class( 'category-listing' ); ?>>
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail( 'thumbnail' ); ?>
+                    </a>
+                    <?php the_excerpt(__('(more…)')); ?>
+                <?php } ?>
+      <?php
+        endwhile;
       wp_reset_postdata();
       ?>
     </ul>
