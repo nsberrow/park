@@ -10,6 +10,15 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'CalistoMT';
+  src: url('../assets/fonts/CalistoMT.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/CalistoMT.woff') format('woff'),
+  url('../assets/fonts/CalistoMT.ttf')  format('truetype'),
+  url('../assets/fonts/CalistoMT.svg#CalisMTBol') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'CalisMTBol';
   src: url('../assets/fonts/CalisMTBol.eot?#iefix') format('embedded-opentype'),
   url('../assets/fonts/CalisMTBol.woff') format('woff'),
@@ -199,14 +208,16 @@ header {
 }
 section.container {
   padding:rem-calc(35px) rem-calc(30px) rem-calc(25px) rem-calc(30px) ;
-  background:$white;
   position: relative;
+  background: $white;
   -webkit-box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
   box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
+  .row {
+    background:$white url("../assets/img/page-bg.jpg") repeat-y;
+  }
 }
 #sidebar {
   margin-top:rem-calc(-16);
-  border-right:1px solid #ddddde;
   position: relative;
   top: 26px;
   z-index: 10;
@@ -218,7 +229,6 @@ section.container {
 .main {
   box-sizing: border-box;
   height: 100%;
-  border-left:1px solid #ddddde;
   left: 241px;
   position: relative;
   @include block-grid(
@@ -232,6 +242,7 @@ section.container {
 .entry-content {
   img {
     box-shadow: 0px 0px 11px rgba(0,0,0,0.3);
+    border:1px solid white;
   }
 }
 .certs {
@@ -249,19 +260,31 @@ section.container {
   ul {
     display: inline-block;
     list-style-type: none;
-    padding: 10px 0px 2px 0;
-    margin: 0 77px;
+    padding: rem-calc(10) 0 rem-calc(8) 0;
+    margin-left: rem-calc(60);
+    margin-bottom: 0;
+    width: 900px;
     li {
       float:left;
-      margin-right: 10px;
       border-right:1px solid #90b4d0;
+      box-sizing: border-box;
+      width: 22%;
+      padding: 0px rem-calc(15) 0 rem-calc(10);
+      &:first-child {
+        width: 28%;
+        padding: 0;
+      }
+      &:last-child {
+        width: 26%;
+        padding: 0 rem-calc(0) 0 rem-calc(10);
+      }
       h5 {
-        font-size: 12px;
+        font-size: rem-calc(12);
         color:$white;
         font-weight: bold;
         text-transform: uppercase;
         margin: 0px;
-        padding: 0px 22px 0 4px;
+        box-sizing: border-box;
         span {
           text-transform: lowercase;
           font-size: 11px;
@@ -290,7 +313,7 @@ footer.row {
     h5 {
       color: white;
       text-align: center;
-      font-size: rem-calc(12px);
+      font-size: rem-calc(11px);
     }
   }
 }
@@ -305,28 +328,30 @@ blockquote {
 }
 .school-links {
   overflow:hidden;
+  margin-bottom: rem-calc(15);
   .home-links {
-    margin-top: 5px;
+    margin-top: 0;
     margin-right: 1%;
-    padding:10px 3% 0 2%;
+    padding:0px 3% 0 2%;
   }
   ul {
     li {
-      padding-bottom:20px;
+      padding-bottom:0px;
       a {
 
         h5 {
           color:$white;
           text-align: center;
           font-weight: bold;
-          padding: 5px 0;
+          padding: 10px 0 8px 0;
           margin-top:0;
           width: 105%;
-          font-family: $font-family-georgia;
+          font-family: $font-family-CalisMTBol;
           font-size: rem-calc(14px);
           text-shadow: 0px 1px 3px rgba(0,0,0,0.9);
           -webkit-box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
           box-shadow: 0 2px 12px 1px rgba(0,0,0,0.3);
+          line-height: 12px;
           &.green {
             background:#40ae49;
           }
@@ -342,7 +367,8 @@ blockquote {
           }
           span {
             width: 100%;
-            font-size: rem-calc(13px);
+            font-family: $font-family-CalistoMT;
+            font-size: rem-calc(12px);
           }
         }
         img {

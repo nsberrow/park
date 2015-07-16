@@ -42,3 +42,7 @@
 		<option value="highschool">Secondary Faculty (Grade 7 - 12)</option>
 	</select>
 </div>
+<?php if (is_front_page() == true) { ?>
+	<br>
+
+<?php } else { } ?>

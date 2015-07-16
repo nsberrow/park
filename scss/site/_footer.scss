@@ -11,6 +11,9 @@
 	.main article {
 		width: 100%;
 	}
+	.footer-strip {
+		display: none;
+	}
 }
 
 @media #{$medium-up} {
