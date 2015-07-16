@@ -232,7 +232,10 @@ section.container {
     margin-left: 0;
   }
 }
-
+section.posts-list {
+  margin-top: 20px;
+  border-bottom:1px solid $snow;
+}
 .main {
   box-sizing: border-box;
   height: 100%;
