@@ -8,29 +8,34 @@ get_header(); ?>
     <h1 class="entry-title">
       Parklands Headlines
     </h1>
-    <ul>
-      <li>
+    <hr>
       <?php $the_query = new WP_Query( 'posts_per_page=15' ); ?>
 
       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
         <h2 class="entry-title">
           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
         </h2>
+        <article>
+          <p>
         <?php if ( has_post_thumbnail() ) { ?>
             <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail( 'thumbnail' ); ?>
             </a>
         <?php } ?>
-      <a class="button" href="<?php the_permalink() ?>">Read more</a>
-
+        <?php $content = get_the_content();
+              $content = strip_tags($content);
+              echo substr($content, 0, 255);
+        ?>
+      <a class="button small" href="<?php the_permalink() ?>">Read more</a>
+      </p>
+    </article>
 
 
       <?php
         endwhile;
       wp_reset_postdata();
       ?>
-    </li>
-    </ul>
+
 
   </div>
   <?php get_sidebar( 'left' ); ?>
