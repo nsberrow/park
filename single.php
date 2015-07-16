@@ -53,13 +53,13 @@ get_header(); ?>
 				<div class="small-12 columns">
 					<div class="menu-news-container">
 						<ul id="menu-news" class="menu">
-							<li class="menu-item active"><a href="http://www.parklands.co.za/site/news/">News</a></li>
+							<li class="menu-item active"><a href="http://www.parklands.co.za/site/news/">Parklands Headlines</a></li>
 							<li class="menu-item "><a href="http://www.parklands.co.za/site/newsletters/">Parklands Newsletters</a></li>
-							<li class="menu-item"><a href="http://www.parklands.co.za/site/parklands-headlines/">Parklands Headlines</a></li>
+
 						</ul>
 					</div>
 				</div>
-			</article>	
+			</article>
 </aside>
 </div>
 <?php get_footer(); ?>

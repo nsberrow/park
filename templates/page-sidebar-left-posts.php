@@ -28,7 +28,7 @@ get_header(); ?>
               echo substr($content, 0, 255);
         ?>
         <div class="clearfix"></div>
-      <a class="button small" href="<?php the_permalink() ?>">Read more</a>
+      <a class="button tiny" href="<?php the_permalink() ?>">Read more</a>
       </p>
     </article>
 
