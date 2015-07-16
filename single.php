@@ -10,7 +10,8 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+
+	<div class="small-12 large-9 columns medium-12 main large-push-3" role="main">
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -46,6 +47,19 @@ get_header(); ?>
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<?php //get_sidebar(); ?>
+	<aside id="sidebar" class="small-12 large-3 columns large-pull-9">
+			<article id="nav_menu-12" class="row widget widget_nav_menu">
+				<div class="small-12 columns">
+					<div class="menu-news-container">
+						<ul id="menu-news" class="menu">
+							<li class="menu-item active"><a href="http://www.parklands.co.za/site/news/">News</a></li>
+							<li class="menu-item "><a href="http://www.parklands.co.za/site/newsletters/">Parklands Newsletters</a></li>
+							<li class="menu-item"><a href="http://www.parklands.co.za/site/parklands-headlines/">Parklands Headlines</a></li>
+						</ul>
+					</div>
+				</div>
+			</article>	
+</aside>
 </div>
 <?php get_footer(); ?>
