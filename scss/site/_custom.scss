@@ -237,17 +237,7 @@ section.posts-list {
   border-bottom:1px solid $snow;
 }
 .main {
-  box-sizing: border-box;
-  height: 100%;
-  left: 241px;
-  position: relative;
-  @include block-grid(
-    $spacing:rem-calc(30)
-  );
-  article {
-    padding-left:rem-calc(25px);
-    padding-right:rem-calc(25px);
-  }
+
 }
 .entry-content {
   img {

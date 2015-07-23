@@ -3,7 +3,7 @@
 Template Name: Left Sidebar
 */
 get_header(); ?>
-<div class="row">
+<div class="row bg-line">
     <div class="small-12 medium-12 large-9 large-push-3 columns main" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
