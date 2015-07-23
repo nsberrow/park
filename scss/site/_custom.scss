@@ -213,6 +213,11 @@ header {
   section.container {
     .row {
       background:$white url("../assets/img/page-bg.jpg") repeat-y;
+      .main {
+        article {
+          padding-left:rem-calc(20);
+        }
+      }
     }
   }
 }
