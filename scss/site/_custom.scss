@@ -205,8 +205,10 @@ h1 {
   }
 }
 header {
-  h1.entry-title {
-    margin-bottom: rem-calc(30);
+  h1 {
+    &.entry-title {
+      margin-bottom: rem-calc(30);
+    }
   }
 }
 .page-template-page-sidebar-left {

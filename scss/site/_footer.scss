@@ -40,7 +40,11 @@
 	}
 }
 @media #{$small-only} {
-
+	h1 {
+		&.entry-title {
+			line-height: rem-calc(26);
+		}
+	}
 	.alignright {
 		float: none;
 	}
