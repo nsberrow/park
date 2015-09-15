@@ -45,6 +45,19 @@
 			line-height: rem-calc(26);
 		}
 	}
+	.page-template-page-sidebar-left {
+		section {
+			&.container {
+				.row {
+					.main {
+						article {
+							padding-left:0;
+						}
+					}
+				}
+			}
+		}
+	}
 	.gallery-size-medium {
 		.gallery-item {
 			width:100%;
