@@ -21,7 +21,7 @@
 				<?php if (is_front_page() == true) { ?>
 					<img src="<?=get_template_directory_uri();?>/assets/img/home-seniorprep.jpg" />
 				<?php } else { } ?>
-				<h5 class="red">SENIOR PREPARATORY<br><span>GRADES 4 - 7</span></h5>
+				<h5 class="red">SENIOR PREPARATORY<br><span>GRADES 4 - 6</span></h5>
 			</a>
 		</li>
 		<li>
@@ -38,7 +38,7 @@
 	<select>
 		<option value="preprimary">Pre-Primary (Grade 0000 - R)</option>
 		<option value="juniorprep">Junior Preparatory (Grade 1 - 3)</option>
-		<option value="seniorprep">Senior Preparatory (Grade 4 - 7)</option>
+		<option value="seniorprep">Senior Preparatory (Grade 4 - 6)</option>
 		<option value="highschool">Secondary Faculty (Grade 7 - 12)</option>
 	</select>
 </div>
