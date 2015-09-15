@@ -45,6 +45,12 @@
 			line-height: rem-calc(26);
 		}
 	}
+	.gallery-size-medium {
+		.gallery-item {
+			width:100%;
+			margin-left:0;
+		}
+	}
 	.alignright {
 		float: none;
 	}
