@@ -40,7 +40,30 @@
 	}
 }
 @media #{$small-only} {
-
+	h1 {
+		&.entry-title {
+			line-height: rem-calc(26);
+		}
+	}
+	.page-template-page-sidebar-left {
+		section {
+			&.container {
+				.row {
+					.main {
+						article {
+							padding-left:0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.gallery-size-medium {
+		.gallery-item {
+			width:100%;
+			margin-left:0;
+		}
+	}
 	.alignright {
 		float: none;
 	}
@@ -66,7 +89,7 @@
 		margin-bottom: 0;
 		background: $blue;
 		h1.title {
-			font-size: rem-calc(18);
+			font-size: rem-calc(14);
 			text-transform: uppercase;
 		}
 	}

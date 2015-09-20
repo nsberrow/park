@@ -205,8 +205,10 @@ h1 {
   }
 }
 header {
-  h1.entry-title {
-    margin-bottom: rem-calc(30);
+  h1 {
+    &.entry-title {
+      margin-bottom: rem-calc(30);
+    }
   }
 }
 .page-template-page-sidebar-left {
@@ -331,13 +333,9 @@ blockquote {
     color: $black;
   }
 }
-.school-links {
-  margin-bottom: rem-calc(15);
-  .home-links {
-    margin-top: 0;
-    padding:0 2%;
-  }
-  ul {
+ul.home-links {
+  margin-top: 0;
+  padding:0 2%;
     li {
       padding-bottom:0px;
       a {
@@ -380,7 +378,18 @@ blockquote {
       }
     }
   }
-}
+  .mobile-links {
+    li {
+      a {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding:10px;
+      }
+    }
+  }
+
 .nobullet {
   list-style-type: none;
   padding-left:0;

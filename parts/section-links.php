@@ -1,5 +1,4 @@
-<div class="row school-links">
-	<ul class="medium-block-grid-4 small-block-grid-1 <?php if (is_front_page() == true) { echo "home-links"; } else { } ?>">
+<ul class="hide-for-small-only medium-block-grid-4 small-block-grid-1 <?php if (is_front_page() == true) { echo "home-links"; } else { } ?>">
 		<li>
 			<a href="<?=site_url();?>/welcome-to-christopher-robin-pre-primary/">
 				<?php if (is_front_page() == true) { ?>
@@ -33,14 +32,13 @@
 			</a>
 		</li>
 	</ul>
-</div>
-<div class="link-dropdown">
-	<select>
-		<option value="preprimary">Pre-Primary (Grade 0000 - R)</option>
-		<option value="juniorprep">Junior Preparatory (Grade 1 - 3)</option>
-		<option value="seniorprep">Senior Preparatory (Grade 4 - 6)</option>
-		<option value="highschool">Secondary Faculty (Grade 7 - 12)</option>
-	</select>
+<div class="show-for-small-only">
+	<ul class="stack-for-small round secondary button-group mobile-links">
+		<li><a href="<?=site_url();?>/welcome-to-christopher-robin-pre-primary/ " class="button">Pre-Primary (Grade 0000 - R)</a></li>
+		<li><a href="<?=site_url();?>/welcome-to-the-junior-preparatory/" class="button">Junior Preparatory (Grade 1 - 3)</a></li>
+		<li><a href="<?=site_url();?>/welcome-to-the-senior-preparatory/" class="button">Senior Preparatory (Grade 4 - 6)</a></li>
+		<li><a href="<?=site_url();?>/welcome-to-the-secondary-faculty/" class="button">Secondary Faculty (Grade 7 - 12)</a></li>
+	</ul>
 </div>
 <?php if (is_front_page() == true) { ?>
 	<br>
