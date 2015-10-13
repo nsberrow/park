@@ -32,12 +32,13 @@
 			</a>
 		</li>
 	</ul>
-<div class="show-for-small-only">
-	<ul class="stack-for-small round secondary button-group mobile-links">
-		<li><a href="<?=site_url();?>/welcome-to-christopher-robin-pre-primary/ " class="button">Pre-Primary (Grade 0000 - R)</a></li>
-		<li><a href="<?=site_url();?>/welcome-to-the-junior-preparatory/" class="button">Junior Preparatory (Grade 1 - 3)</a></li>
-		<li><a href="<?=site_url();?>/welcome-to-the-senior-preparatory/" class="button">Senior Preparatory (Grade 4 - 6)</a></li>
-		<li><a href="<?=site_url();?>/welcome-to-the-secondary-faculty/" class="button">Secondary Faculty (Grade 7 - 12)</a></li>
+
+<div class="link-dropdown show-for-small-only">
+	<ul class="stack button-group">
+		<li class="button"><a href="<?=site_url();?>/welcome-to-christopher-robin-pre-primary/ ">Pre-Primary (Grade 0000 - R)</a></li>
+		<li class="button"><a href="<?=site_url();?>/welcome-to-the-junior-preparatory/">Junior Preparatory (Grade 1 - 3)</a></li>
+		<li class="button"><a href="<?=site_url();?>/welcome-to-the-senior-preparatory/">Senior Preparatory (Grade 4 - 6)</a></li>
+		<li class="button"><a href="<?=site_url();?>/welcome-to-the-secondary-faculty/">Secondary Faculty (Grade 7 - 12)</a></li>
 	</ul>
 </div>
 <?php if (is_front_page() == true) { ?>

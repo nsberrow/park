@@ -194,14 +194,17 @@ h1 {
   margin-bottom: rem-calc(20px);
 }
 .link-dropdown {
-  display: none;
   margin-top: rem-calc(14);
   padding-left: rem-calc(8);
   padding-right: rem-calc(8);
-  select {
-    width: 100%;
-    font-size: rem-calc(18);
-    padding: rem-calc(5);
+  ul {
+    li {
+      padding:14px 5px;
+      a {
+        color:$white;
+
+      }
+    }
   }
 }
 header {
